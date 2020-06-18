@@ -1,0 +1,33 @@
+Geometric random variable
+
+역시 Discrete Random Variable의 일종이다
+그리고 앞에서 예시로 이미 한 번 만나본 적이 있다.
+
+p의 확률로 성공하는 independent trials가 있다.
+X = 처음 성공할 때까지 몇 번이나 try했는가?
+X ~ G(p)
+
+참조; Binomial의 경우 X ~ Bin(x, p)로 표시하며 x는 시행 횟수이다
+교수님이 까먹으신 모양이다.
+
+
+Poisson random variable
+
+푸아송은, 재료과학계에서는 아주 유명한 인물이다! 여기서 만나니 너무 반갑다.
+0보다 큰 '람다'라는 값을 필요로 한다.(Poisson random variable의 mean value)
+
+Poisson random variabledms '단위 시간, 단위 공간에서 평균발생횟수'를 의미한다.
+Poisson random variable에서 결과값은 0, 1, 2 등등... 으로 나타난다.
+이때 기댓값과 분산은 모두 모수인 람다가 된다.
+
+p(i) = e^(-람다) x 람다^i / i!
+X ~ Poisson(람다)
+
+잘 와닿지 않는 이 random variable이 대체 어디에 사용되는 것인가?
+
+n이 p보다 훨씬 작을 때... binomial과 값이 근사하다.
+확률은 적으면서 시도수는 클 때 횟수를 세기 정말 좋다.
+
+binomial로부터 푸아송을 유도할 수 있다!
+모수인 람다는 mean value이므로 np와 같다. 이를 이용해서 식을 바꿔볼 수 있다.
+p에다가 (람다/n)를 넣어보는 것이다(내일 직접 해보도록 하자)
