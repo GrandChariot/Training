@@ -1,0 +1,43 @@
+1-2. Randomness
+
+'Randomness'란 무엇인가?
+
+
+우선 'Sample Space'(S)란?
+전체집합이다.
+모든 possibility를 다 고려하는 것.
+
+ex) toss of a fair coin twice S; = {HH, HT, TH, TT}
+동전을 두 번 던질 때의 Sample Space
+이렇게 하나하나 전부 셀 수 있는 경우를 Discrete(이산적)하다고 한다.
+
+ex) lifetime of a bulb; S = [0, 무한대)
+전구의 수명이라는 건 하나하나를 다 셀 수가 없다.
+이에 대해서는 Continuous(연속적)이라고 한다.
+
+
+Event(E)는 Sample Space의 부분집합이다.
+가령, 위의 동전 사례에서 E = {HH, HT, TH}라고 해보자.
+이 E의 정의는 바로 '한 번이라도 앞면이 나온 경우'이다.
+
+연속적인 사례에서는 E = (500, 1000)과 같은 식으로 나타낼 수 있다.
+
+
+1. union of the events(합집합)
+2. intersection of the events(교집합)
+이 둘은 굳이 설명하지 않아도 고등학생 때 충분히 했을 것이다.
+
+
+1.3. Probabilities Defined on Events
+P(E)는 E가 일어날 확률을 의미한다.
+확률의 특징은 아래와 같다.
+1. 0 <= P(E) <= 1
+아주 당연한 이야기지만, 가끔 이런 기본적인 걸 틀리는 학생도 있다.
+2. P(S) = 1(exhaustive)
+3. 교집합이 공집합인 두 Event를 mutually exclusive라고 한다.
+가령, E와 E의 여집합은 교집합이 없다. 이 둘은 mutually exclusive하다.
+E의 여집합이 일어날 확률은, 1-P(E)이다.
+
+그래서 두 집합의 합집합을 할 때에는,
+두 집합을 더한 후 교집합을 제외해야 한다.
+
