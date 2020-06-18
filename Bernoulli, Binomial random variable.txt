@@ -1,0 +1,28 @@
+Bernoulli random variable
+
+Discrete Random Variable에도 다양한 종류가 있다.
+첫 번째로 볼 것은 Bernoulli random variable이다.
+스위스의 물리학자이자 유명한 수학자인 베르누이. 유체역학 배울 때 들어본 적이 있다!
+
+결과가 success가 될 수도 있고 failure가 될 수도 있는 경우가 있다.
+가령, '엘드리치 호러'라는 보드게임에서 주사위를 굴려 5와 6은 성공, 나머지는 실패로 간주된다.
+5, 6은 success이고 1, 2, 3, 4는 failure인 셈이다.
+
+Random Variable X가 success가 될 확률이 p, failure일 확률이 1-p
+둘로 나뉘는 Random Variable을 Bernoulli random variable이라고 한다.
+
+
+Binomial random variable
+이항 분포
+
+Bernoulli random variable과 아주 비슷해서 헷갈리기 쉽다.
+하지만 뭐가 다르냐...? 이항 분포에서 시도는 1번이 아니다! trial이 n번이다.
+
+여기서 X = n번 중에 몇 번이나 성공했는가?
+
+위의 보드게임에서 주사위를 60번 던졌다고 해보자(n=60)
+5와 6이 나올 확률은 1/3이므로 대충 60번 중에 20번 정도 성공하겠지?
+물론 정확하게 20번 나오지 않는다... 그렇다면 딱 20번이 나올 확률은?
+
+p(i) = (nCi)p^i(1-p)^(n-i)
+식이 복잡해보이지만 고등학생 때 질리도록 계산해본 것이므로 쉽게 할 수 있다...
