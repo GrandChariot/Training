@@ -1,0 +1,28 @@
+Cumulative Distribution Function(cdf)
+누적 확률 분포 함수
+
+F(b) = P(X <= b)
+X가 b보다 낮은 경우의 확률을 전부 더한 것
+
+F(b)는 단조증가함수이다!
+왜냐하면 적분값인데, 확률이 마이너스일 수는 없기 때문이다.
+b가 오른쪽으로 무한대로 가면 모든 확률이니 1이 되고, 마이너스 무한대로 가면 0이 된다.
+
+ex) 그럼 P(a<X<=b)는 어떻게 구하는가?
+F(b) - F(a)이다(그래프를 그리면 쉽게 생각할 수 있다.)
+
+
+Discrete Random Variables
+이전 강의에서 Random Variable은 Discrete한 것과, Continuous한 것으로 나눌 수 있다고 했다.
+Discrete한 것은 아무리 많아도 경우의 수를 전부 나열할 수 있다.
+
+Probability Mass Function(pmf) - discrete할 때
+px(a) = p(a) = P{X=a}
+X가 특정 숫자일 때의 확률
+discrete에서는 하나하나의 경우의 수가 '무게'를 가지고 있다고 여긴다.
+또한 cdf는 pmf에 시그마를 취한 값이다.
+
+참고로 Probability Densify Function(cdf)는 continuous 할 때를 표현한다.
+
+중요한 점!!
+Discrete Random Variable은 pmf에 의해 완벽하게 정의된다. 서로 일대일 대응 관계!!
